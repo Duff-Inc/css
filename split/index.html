@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Magic Boxes</title>
+</head>
+<link rel="stylesheet" href="../clearfix/clearfix.css">
+<link rel="stylesheet" href="split.css">
+<style type="text/css">
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.a {
+    min-width: 200px;
+}
+.b {
+    min-width: 100px;
+}
+.a,
+.b,
+.c {
+    border: 1px solid #ccc;
+    background: #ddd;
+}
+
+.narrow {
+    width: 200px;
+}
+
+.measurement {
+    margin: 0;
+    text-align: center;
+    font-size: inherit;
+    line-height: inherit;
+}
+</style>
+<body>
+
+<h2 class="measurement">100%</h2>
+<div class="split">
+    <div class="a">A1</div>
+    <div class="b">B1</div>
+    <div class="shim"></div>
+</div>
+
+<div class="c">C1</div>
+
+<div class="split">
+    <div class="a">A2</div>
+    <div class="b">B2</div>
+    <div class="shim"></div>
+</div>
+
+<div class="c">C2</div>
+
+<p>The B boxes will align right when there is sufficient width and align left when there is not enough space</p>
+
+<div class="narrow">
+    <h2 class="measurement">200px</h2>
+    <div class="split">
+        <div class="a">A1</div>
+        <div class="b">B1</div>
+        <div class="shim"></div>
+    </div>
+
+    <div class="c">C1</div>
+
+    <div class="split">
+        <div class="a">A2</div>
+        <div class="b">B2</div>
+        <div class="shim"></div>
+    </div>
+
+    <div class="c">C2</div>
+</div>
+
+</body>
+</html>

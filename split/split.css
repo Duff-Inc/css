@@ -1,0 +1,12 @@
+.split {
+    display: block;
+    text-align: justify;
+    margin-bottom: -1.19em;
+}
+.split > * {
+    display: inline-block;
+}
+.split .shim {
+    content: "";
+    width: 100%;
+}
